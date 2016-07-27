@@ -1,8 +1,10 @@
 # gulp-autoplumb
 A hacky way of forcing gulp to use plumber by default. See [gulp-plumber](https://github.com/floatdrop/gulp-plumber). Use at your own risk.
 
-## How it works
-This module will replace `gulp.src` with a proxy function. This function return's the original `gulp.src` and pipes plumber onto it.
+## Installation
+```
+npm i gulp-autoplumb
+```
 
 ## Usage
 Use as if it were gulp:
@@ -27,6 +29,9 @@ gulp.handler = function(err){
 }
 ```
 If you want plumber to work properly, be sure to include `this.emit('end')`.
+
+## How it works
+This module will replace `gulp.src` with a proxy function. This function return's the original `gulp.src` and pipes plumber onto it.
 
 ## License
 

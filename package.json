@@ -1,6 +1,6 @@
 {
   "name": "gulp-autoplumb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A hacky way of forcing gulp to use plumber by default.",
   "main": "index.js",
   "scripts": {
