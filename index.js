@@ -1,8 +1,7 @@
 const gulp     = require('gulp')
 const plumber  = require('gulp-plumber')
-let chalk
 
-const chalk
+let chalk
 
 try {
   chalk = require('chalk')
