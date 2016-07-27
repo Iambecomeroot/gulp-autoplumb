@@ -1,0 +1,28 @@
+{
+  "name": "gulp-autoplumb",
+  "version": "1.0.0",
+  "description": "A hacky way of forcing gulp to use plumber by default.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Marcel-Robitaille/gulp-autoplumb.git"
+  },
+  "keywords": [
+    "gulp",
+    "plumber",
+    "error"
+  ],
+  "author": "Marcel Robitaille <marcelrobitaille11@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Marcel-Robitaille/gulp-autoplumb/issues"
+  },
+  "homepage": "https://github.com/Marcel-Robitaille/gulp-autoplumb#readme",
+  "dependencies": {
+    "gulp": "3.x",
+    "gulp-plumber": "1.x"
+  }
+}
