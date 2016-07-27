@@ -1,10 +1,11 @@
 const gulp     = require('gulp')
 const plumber  = require('gulp-plumber')
+let chalk
 
 try {
-  const chalk  = require('chalk')
+  chalk = require('chalk')
 } catch (e) {
-  const chalk  = {
+  chalk = {
     red: s => s
   }
 }
