@@ -1,3 +1,8 @@
+![npm downloads](https://img.shields.io/npm/dt/gulp-autoplumb.svg?style=flat-square)
+![Git issues](https://img.shields.io/github/issues/marcel-robitaille/gulp-autoplumb.svg?style=flat-square)
+![npm version](https://img.shields.io/npm/v/gulp-autoplumb.svg?style=flat-square)
+![license](https://img.shields.io/npm/l/express.svg?style=flat-square)
+
 # gulp-autoplumb
 A hacky way of forcing gulp to use plumber by default. See [gulp-plumber](https://github.com/floatdrop/gulp-plumber). Use at your own risk.
 
