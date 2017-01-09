@@ -1,3 +1,5 @@
+'use strict'
+
 const gulp     = require('gulp')
 const plumber  = require('gulp-plumber')
 
@@ -7,18 +9,20 @@ try {
   chalk = require('chalk')
 } catch (e) {
   chalk = {
-    red: s => s
+    red: s => s,
+    bold: s => s,
   }
 }
 
 const _gulpsrc = gulp.src
 
 let handler = function(err){
-  const message = err.message.replace(`${err.fileName}: `, '')
+  const message = err.message.replace(`${err.file}: `, '')
 
   console.log()
-  console.log(chalk.red(`  Error in ${err.fileName}, line ${err.lineNumber}: ${message}`))
-  console.log(err.stack.replace('Error\n', ''))
+  console.log(chalk.red(`Error in ${chalk.bold(err.file)}, line ${chalk.bold(err.line)} from ${err.plugin}`))
+  console.log(chalk.red(message))
+  console.log(err.stack)
   console.log()
 
   this.emit('end')
